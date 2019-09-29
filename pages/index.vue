@@ -1,72 +1,89 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        dona-blog-2019
-      </h1>
-      <h2 class="subtitle">
-        My blog new 
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <section>
+    <section class="header-title">
+      <h1>The Blog</h1>
+      <p>by <b>DONAËL WALTER</b></p>
+    </section>
+    <section class="content">
+      <div class="last"></div>
+      <div class="list">
+        <p class="list-title">Recent articles</p>
+        <PostCard
+        v-for="(blog, index) in blogList"
+        :key="index"
+        :postinfo="blog"
+        />
       </div>
-    </div>
-  </div>
+    </section>
+  </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+// pages/index.vue
+import blogs from '~/content/blogs.json'
+import PostCard from '~/components/PostCard'
 
 export default {
   components: {
-    Logo
+    PostCard
+  },
+  async asyncData({ app }) {
+    async function awaitImport(blog) {
+      const wholeMD = await import(`~/content/blog/${blog.slug}.md`)
+      return {
+        attributes: wholeMD.attributes,
+        link: blog.slug
+      }
+    }
+
+    const blogList = await Promise.all(
+      blogs.map(blog => awaitImport(blog))
+    ).then(res => {
+      return {
+        blogList: res
+      }
+    })
+
+    return blogList
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style  scoped>
+  h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  h1+p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+  .header-title{
+    height: 112px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+  .content{
+    margin-left: 9%;
+    margin-right: 9%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .last{
+    margin-right: 32px;
+  }
+  .list-title{
+    height:18px;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 16px;
+  }
+  .list{
+    margin-left:32px;
+  }
 </style>
