@@ -1,7 +1,7 @@
 <template>
     <article class="article-card">
        <nuxt-link :to="`/blog/${$attrs.postinfo.link}`">
-        <img class="featured-image" :src="`${$attrs.postinfo.attributes.thumbnail}`"/>
+        <img class="featured-image" :v-lazy="`${$attrs.postinfo.attributes.thumbnail}`"/>
         <div class="article-info">
           <p class="article-type">{{$attrs.postinfo.attributes.type}}</p>
           <h5 class="article-title">{{$attrs.postinfo.attributes.title}}</h5>
