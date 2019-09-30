@@ -1,7 +1,10 @@
 <template>
     <article class="article-card">
        <nuxt-link :to="`/blog/${$attrs.postinfo.link}`">
-        <img class="featured-image" :v-lazy="`${$attrs.postinfo.attributes.thumbnail}`"/>
+       <div class="featured-conteneur">
+                 <img class="featured-image" :v-lazy="'https://blog.donaelwalter.com'+`${$attrs.postinfo.attributes.thumbnail}`" :src="'https://blog.donaelwalter.com'+`${$attrs.postinfo.attributes.thumbnail}`"/>
+
+       </div>
         <div class="article-info">
           <p class="article-type">{{$attrs.postinfo.attributes.type}}</p>
           <h5 class="article-title">{{$attrs.postinfo.attributes.title}}</h5>
@@ -33,6 +36,13 @@ export default {
   }
   a{
     display: flex;
+  }
+  .featured-conteneur{
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .featured-image{
     width: 256px;

@@ -50,7 +50,7 @@ export default {
   <section class="post">
     <div class="post-header">
       <div class="thumbnail-conteneur">
-        <img v-lazy="thumbnail" class="thumbnail" :alt="title" />
+        <img v-lazy="'https://blog.donaelwalter.com'+thumbnail" class="thumbnail" :alt="title" :src="'https://blog.donaelwalter.com'+thumbnail" />
       </div>
       <div class="post-info-conteneur">
         <section class="post-type">{{ type }}</section>
@@ -67,6 +67,7 @@ export default {
   margin-top: 64px;
   margin-left: 9%;
   margin-right: 9%;
+  overflow-y: hidden;
 }
 .post-header{
   height: 448px;
@@ -80,6 +81,14 @@ export default {
   width: 55%;
   z-index: 1;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.thumbnail-conteneur>img{
+  width: 100%;
+  height: auto;
 }
 .post-header>.post-info-conteneur{
   height: 100%;
@@ -120,6 +129,31 @@ export default {
   margin-top: 64px;
   margin-left: 9%;
   margin-right: 9%;
-  width: 100%;
+  color: white;
+  overflow-y: hidden;
+  margin-bottom: 64px;
+}
+.post-content>h1,h2,h3{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.post-content>p{
+  margin-bottom: 16px;
+}
+
+</style>
+
+<style>
+.post-content>h2,h3{
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.post-content>p{
+  margin-bottom: 16px;
+}
+.post-content a{
+  color: rgb(132, 193, 240);
+  font-weight: bold;
+  text-decoration: none;
 }
 </style>
