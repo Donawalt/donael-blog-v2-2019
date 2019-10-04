@@ -2,7 +2,7 @@
     <article class="article-card">
        <nuxt-link :to="`/blog/${$attrs.postinfo.link}`">
        <div class="featured-conteneur">
-                 <img class="featured-image" :v-lazy="'https://blog.donaelwalter.com'+`${$attrs.postinfo.attributes.thumbnail}`" :src="'https://blog.donaelwalter.com'+`${$attrs.postinfo.attributes.thumbnail}`"/>
+                 <img class="featured-image" :v-lazy="'https://blog.donaelwalter.com'+`${$attrs.postinfo.attributes.thumbnail}`" :src="'https://blog.donaelwalter.com'+`${$attrs.postinfo.attributes.thumbnail}`" loading="lazy"/>
 
        </div>
         <div class="article-info">
@@ -36,6 +36,7 @@ export default {
   }
   a{
     display: flex;
+    text-decoration: none;
   }
   .featured-conteneur{
     height: 150px;

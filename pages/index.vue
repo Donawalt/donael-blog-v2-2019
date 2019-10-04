@@ -5,7 +5,11 @@
       <p>by <b>DONAËL WALTER</b></p>
     </section>
     <section class="content">
-      <div class="last"></div>
+      <div class="last">
+        <MainCard 
+        :postinfo="blogList[blogList.length -1]"
+        />
+      </div>
       <div class="list">
         <p class="list-title">Recent articles</p>
         <PostCard
@@ -22,10 +26,12 @@
 // pages/index.vue
 import blogs from '~/content/blogs.json'
 import PostCard from '~/components/PostCard'
+import MainCard from '~/components/MainCard'
 
 export default {
   components: {
-    PostCard
+    PostCard,
+    MainCard
   },
   async asyncData({ app }) {
     async function awaitImport(blog) {

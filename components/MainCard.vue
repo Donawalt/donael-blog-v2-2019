@@ -1,15 +1,17 @@
 <template>
     <article class="article-card">
        <nuxt-link :to="`/blog/${$attrs.postinfo.link}`">
-        <section>
-          <img class="featured-image" :src="`${$attrs.postinfo.attributes.thumbnail}`"/>
+        <section class="thumbnail">
+          <div class="thumbnail-container">
+            <img class="featured-image" :src="`${$attrs.postinfo.attributes.thumbnail}`" loading="lazy"/>
+          </div>
           <p class="article-type">{{$attrs.postinfo.attributes.type}}</p>
         </section>
         <div class="article-info">
-          <small>{{$attrs.postinfo.attributes.date}}</small>
           <h5 class="article-title">{{$attrs.postinfo.attributes.title}}</h5>
+          <small class="article-date">{{$attrs.postinfo.attributes.date}}</small>
           <p class="article-author">by {{$attrs.postinfo.attributes.author}}</p>
-          <p>{{$attrs.postinfo.attributes.resume}}</p>
+          <p class="article-summary">{{$attrs.postinfo.attributes.summary}}</p>
         </div>
        </nuxt-link>
     </article>
@@ -31,23 +33,45 @@ export default {
 </script>
 
 <style scoped>
+  .thumbnail{
+    position: relative;
+  }
   .article-card{
     margin-bottom: 32px;
-    display: flex;
+    background-color: #2D70A2;
+    padding-bottom: 32px;
+    border-radius: 8px;
+    overflow: hidden;
   }
   a{
+    text-decoration: none;
+  }
+  .thumbnail-container{
+    max-width: 608px;
+    height: 320px;
+    width: 100%;
+    overflow: hidden;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .featured-image{
-    width: 256px;
-    margin-right: 32px;
+    width: 105%;
   }
   .article-type{
-    font-size:12px;
-    color: rgb(21, 255, 0);
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 16px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.73);
+    color: white;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    position: absolute;
+    bottom: 0;
   }
   .article-title{
     font-size: 20px;
@@ -59,5 +83,19 @@ export default {
     font-size: 12px;
     color: #AAAA;
     font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .article-info {
+    margin: 32px;
+  }
+  .article-summary{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+  }
+  .article-date{
+    margin-bottom:16px;
+    color: azure;
   }
 </style>

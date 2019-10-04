@@ -11,12 +11,12 @@
                     <nuxt-link to="/">
                         <li>home</li>
                     </nuxt-link>
-                    <nuxt-link to="categories">
+                    <nuxt-link to="/categories">
                         <li>catégories</li>
                     </nuxt-link>
-                    <nuxt-link to="" href="https://www.donaelwalter.com/">
+                    <a href="https://www.donaelwalter.com/">
                         <li>portfolio</li>
-                    </nuxt-link>
+                    </a>
                 </ul>
             </nav>
         </section>
