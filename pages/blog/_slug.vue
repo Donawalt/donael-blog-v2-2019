@@ -149,17 +149,27 @@ export default {
 }
 .post-content>p{
   margin-bottom: 16px;
+  width: 100%;
 }
 
 </style>
 
 <style>
+.post-content img{
+    height: auto;
+    width: 50vw;
+    margin: auto;
+  }
 .post-content>h2,h3{
   margin-top: 32px;
   margin-bottom: 16px;
 }
 .post-content>p{
   margin-bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .post-content a{
   color: rgb(132, 193, 240);
