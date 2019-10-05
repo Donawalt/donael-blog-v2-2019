@@ -29,6 +29,16 @@ import PostCard from '~/components/PostCard'
 import MainCard from '~/components/MainCard'
 
 export default {
+  head () {
+    return {
+      title: 'THE BLOG by Donaël WALTER',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: this.summary },
+        { hid:'og-id', 'og:title': 'THE BLOG', 'og:description': 'Test description'}
+      ]
+    }
+  },
   components: {
     PostCard,
     MainCard

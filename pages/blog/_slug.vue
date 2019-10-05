@@ -1,5 +1,15 @@
 <script>
 export default {
+  head () {
+    return {
+      title: 'THE BLOG : '+this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: this.summary },
+        { hid:'og-id', 'og:title': this.title , 'og:description': this.summary, 'og:image': this.thumbnail}
+      ]
+    }
+  },
   async asyncData({ params }) {
     const post = await import(`~/content/blog/${params.slug}.md`)
     const attr = post.attributes
