@@ -3,68 +3,48 @@ type: Photographie
 language: ''
 title: '5 Photograpes : Septembre 2019'
 summary: >-
-  Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus
-  porttitor. Cum sociis natoque penatibus et magnis dis parturient montes,
-  nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat
-  porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh
-  ultricies vehicula ut id elit.
-date: 2019-06-03T11:35:58.367Z
-update: 2019-06-03T11:35:58.367Z
-author: Brave Sir Robin
-authorlink: 'https://twitter.com'
+  Voici une sélection de 5 photographes qui valent le détour, pour ce mois de
+  septembre 2019. 
+
+  Aujourd’hui nous découvrons Vincent Meunier, Guillaume Villegas, Peter
+  McKinnon et Olivier Schmitt. Des photographes de tout styles et avec des
+  qualités artistiques diverses.
+date: 2019-07-27T22:00:00.000Z
+update: 2019-10-04T22:00:00.000Z
+author: Donaël Walter
+authorlink: 'https://donaelwalter.com/'
 thumbnail: /images/uploads/peter2.jpg
 ---
+Pour le plaisir des yeux, voici ma petite sélection de photographe que je vous invite à découvrir du mois de juillet !
 
-## Tela ullus inpulit quo
+Avant de commencer bienvenue aux nouveaux lecteurs sur ce blog je parle , photographies, design, parkour/freerunning et vidéo. Mais je parlerai certainement de musique de temps en temps et du streetwear.
 
-Lorem markdownum cura fuisset humo quo Palladis colli: umero tela,
-[datos](http://cuivepraebuimus.net/tamen), ne, in. Es maesta iaculum aliqua hac
-vulnera *tecta transit*, sit.
+## 1- Vincent Meunier (Torendo)
 
-[Traxit sexangula namque](http://ipsa-luco.io/reclusi-et.aspx) ima lateo gratia,
-super vineta internodia adieci felle? Hoc exsequitur dedisti tempore domique
-mirum Megareius primo moenibus, primum circumdata Iuppiter vera solet. Et mea
-insidias muneris; fortiter umeris.
+Photographe principalement de noir et blanc, ils capture sont environnement et sont entourage avec un fort coté photos de rue. Il collabore souvent avec le magasin de vêtements "Le labo Store" basée à Valence. 
 
-## Tempto noctes
+![homme habillée en cp-company , photo en noir et blanc ](https://66.media.tumblr.com/79934ee1acc7c7ff19a0cd8c799dc1c1/tumblr_preo9nj79m1vow789o1_1280.jpg "CP-COMPANY MAN")
 
-Inde osse fata ad icta pervenit latus, aut **sequerer in insula**, deque
-lassavit. Nactusque iactari Cycladas [tenet](http://www.munere.io/memor) et
-domus, arbore dum, si atri mecum iura minores: quid vixque. [Velocibus
-iram](http://quaeausus.com/iuncta-se) consistere pennis!
+![Photo en noir et blanc d'un homme ressemblant à un boxer ](https://66.media.tumblr.com/6d4665e16ba2ac81bfb25305cefd12d0/tumblr_preo1i9cFG1vow789o1_1280.jpg "BOXER-MAN")
 
-## Sed modo prodita
+![Homme cagoulée en moto ](https://scontent-cdt1-1.cdninstagram.com/vp/ed4469288139d06d04c5497c34c02593/5DE1C52D/t51.2885-15/e35/66337623_677420942722013_5143470802871997307_n.jpg?_nc_ht=scontent-cdt1-1.cdninstagram.com "HIDE FACE MEN IN MOTO")
 
-Inscius vertebar revulsus Priapi vidi gratia lumina; mandata huic ferarum
-aetatis! Rettulit addidit proles; peperisse [neque quantum
-limina](http://se.org/ab) mutari. Urbem frigore, qui copia mittitur arva sole
-quaerit, enim? Modo sentibus Martis palantesque artus, amor, ire iubae.
+## 2- Guillaume Villegas (Ganupic)
 
-## Et quem nidos inter lingua pretiosior adhuc
+Gillaume Villegas est un photographe découvert via Instagram, il prend en photo tout ce qu'il voit quotidiennement, et principalement les photos de ces voyages. Ces photos sont colorés et donne envie de voyager et de rêver en même temps.
 
-Corpora quamquam, et ventorum urbes, ille, facies, et par utque adhuc. Rigore
-alto aurea iamque in pariter pressa; clamabat crine fata! Caducas in miscet
-Othryn indurata ab aquarum accessit ruris vestes.
+![ganupic](https://static.wixstatic.com/media/bc3a47_b2009c58725e4c3ab6f14d263f9b9373~mv2_d_1333_2000_s_2.jpg/v1/fill/w_748,h_1123,al_c,q_85,usm_0.66_1.00_0.01/LonelyMan-7.webp)
 
-1. Dum vestro uberibus
-2. Ista aethere Thybridis parva sollertius sanguine corpora
-3. Dixit opperiuntur propiore reges generatus novit condit
-4. Undaeque summa haec et victus materiaque tamen
+![ganupic](https://static.wixstatic.com/media/bc3a47_50c9f19877a946fca620982645040c01~mv2_d_1333_2000_s_2.jpg/v1/fill/w_749,h_1123,al_c,q_85,usm_0.66_1.00_0.01/LonelyMan-3.webp)
 
-## Corpus ausum volui iuvat Tanais
+## 3- Peter McKinnon
 
-Audire domabile, petatur saepes vescitur in pronis *daturum ad pace* profundo
-Brotean. Et tenuisse nil duorum dedit, et atque cumque nec tegemus amorem, date.
+Peter McKinnon est un Youtubeur et Photographe de Toronto. Ces créations sont des qualités sur Youtube ils fournissent énormément de méthode de technique pour améliorer sa technique en photographie.
 
-    var technologySprite = cameraWebText;
-    webMultimediaHypertext.remoteErrorFirewall +=
-            moodleEmoticonController.matrix_modifier(io);
-    textSmartphone.sampleInterpreter(diskTrojan(ccTebibyte));
-    and = 5;
+![Cars in desert from Peter McKinnon](/images/uploads/peter2.jpg "Cars in desert from peter McKinnon")
 
-Alto quis iussit sub quoque effigies volucrem lugebat: beatam haud, turbant
-caelitibus. De regi mutilatae caecamque quid. Dum in quantum exsangui; inpensius
-caelo credimus sine coniunx materno inmunitamque circumdare bello, quos. Ingens
-manus [armis](http://tincta.org/superisargolicosque.aspx) quam aere quo neque
-traxit a ut isse quaerensque crura tempore contingit percussere labori. Lingua
-in conchae clipeus.
+## 4- Olivier Schmitt
+
+Olivier Schmitt est un peu l'alter ego de Peter McKinnon Youtubeur lui aussi et photographe français ils donnent des conseils pertinents et ouverts à tous les niveaux.
+
+![Kid who play near water](/images/uploads/67435600_628404584317773_1507062628020406891_n.jpg "kid near water")
