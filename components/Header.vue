@@ -27,6 +27,12 @@
 a{
     color:white;
     text-decoration: none;
+    border-bottom: 4px solid rgba(100, 148, 237, 0);
+}
+a:hover{
+    transform: scale(1.1);
+    border-bottom: 4px solid red;
+    transition: 200ms;
 }
 div{
     height: 64px;

@@ -24,6 +24,12 @@
 a{
     color:white;
     text-decoration: none;
+    transition: 200ms;
+}
+a:hover{
+    transform: scale(1.2);
+    border-bottom: 4px solid red;
+    transition: 200ms;
 }
 div{
     height: 64px;

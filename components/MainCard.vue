@@ -42,6 +42,11 @@ export default {
     padding-bottom: 32px;
     border-radius: 8px;
     overflow: hidden;
+    transition: 500ms;
+  }
+  .article-card:hover .featured-image{
+    transform: scale(1.05);
+    transition: 500ms;
   }
   a{
     text-decoration: none;
@@ -57,6 +62,7 @@ export default {
   }
   .featured-image{
     width: 105%;
+    transition: 200ms;
   }
   .article-type{
     height: 32px;

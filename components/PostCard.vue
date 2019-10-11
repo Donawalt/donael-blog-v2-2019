@@ -45,9 +45,14 @@ export default {
     justify-content: center;
     align-items: center;
   }
+  .article-card:hover .featured-image{
+    transform: scale(1.05);
+    transition: 500ms;
+  }
   .featured-image{
     width: 256px;
     margin-right: 32px;
+    transition: 200ms;
   }
   .article-type{
     font-size:12px;
