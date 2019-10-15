@@ -1,7 +1,7 @@
 ---
 type: Photographie
 language: ''
-title: '5 Photograpes : Juillet 2019'
+title: '5 Photographes : Juillet 2019'
 summary: >-
   Voici une sélection de 5 photographes qui valent le détour, pour ce mois de
   septembre 2019. 
