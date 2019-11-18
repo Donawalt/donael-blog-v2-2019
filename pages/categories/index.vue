@@ -2,7 +2,7 @@
     <div class="content">
       <div class="nav-container">
       <nav class="nav">
-        <nuxt-link :to="`/type?${blog.attributes.type}`" v-for="blog in filterType" :key="blog">{{blog.attributes.type}}</nuxt-link>
+        <nuxt-link :to="`/type?type=${blog.attributes.type}`" v-for="blog in filterType" :key="blog">{{blog.attributes.type}}</nuxt-link>
       </nav>
       </div>
     </div>
