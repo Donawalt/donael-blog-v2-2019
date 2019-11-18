@@ -6,7 +6,7 @@
 
        </div>
         <div class="article-info">
-          <p class="article-type">{{$attrs.postinfo.attributes.type}}</p>
+          <p class="article-type"><nuxt-link :to="`/type?type=${$attrs.postinfo.attributes.type}`">{{$attrs.postinfo.attributes.type}}</nuxt-link></p>
           <h5 class="article-title">{{$attrs.postinfo.attributes.title}}</h5>
           <p class="article-author">by {{$attrs.postinfo.attributes.author}}</p>
         </div>
@@ -54,7 +54,7 @@ export default {
     margin-right: 32px;
     transition: 200ms;
   }
-  .article-type{
+  .article-type>a{
     font-size:12px;
     color: rgb(21, 255, 0);
     text-transform: uppercase;

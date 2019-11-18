@@ -63,7 +63,7 @@ export default {
         <img v-lazy="'https://blog.donaelwalter.com'+thumbnail" class="thumbnail" :alt="title" :src="'https://blog.donaelwalter.com'+thumbnail" />
       </div>
       <div class="post-info-conteneur">
-        <section class="post-type">{{ type }}</section>
+        <section class="post-type"><nuxt-link :to="`/type?type=${type}`">{{ type }}</nuxt-link></section>
         <h1 class="post-title">{{ title }}</h1>
         <p class="post-date">{{ published }}</p>
       </div>
@@ -128,6 +128,10 @@ export default {
   justify-content: center;
   align-items: center;
   margin-bottom: 32px;
+}
+.post-type>a {
+  color: white;
+  text-decoration :none;
 }
 .post-date{
   font-size: 18px;

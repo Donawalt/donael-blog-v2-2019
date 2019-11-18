@@ -5,7 +5,7 @@
           <div class="thumbnail-container">
             <img class="featured-image" :src="`${$attrs.postinfo.attributes.thumbnail}`" loading="lazy"/>
           </div>
-          <p class="article-type">{{$attrs.postinfo.attributes.type}}</p>
+          <p class="article-type"><nuxt-link :to="`/type?type=${$attrs.postinfo.attributes.type}`">{{$attrs.postinfo.attributes.type}}</nuxt-link></p>
         </section>
         <div class="article-info">
           <h5 class="article-title">{{$attrs.postinfo.attributes.title}}</h5>
@@ -78,6 +78,9 @@ export default {
     margin-bottom: 32px;
     position: absolute;
     bottom: 0;
+  }
+  .article-type>a{
+    color: white;
   }
   .article-title{
     font-size: 20px;

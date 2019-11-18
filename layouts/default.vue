@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <Header/>
     <nuxt />
     <Footer />
@@ -66,5 +66,11 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.body{
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
 }
 </style>

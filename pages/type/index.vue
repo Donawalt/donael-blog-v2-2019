@@ -1,19 +1,13 @@
 <template>
   <section>
     <section class="header-title">
-      <h1>The Blog</h1>
-      <p>by <b>DONAËL WALTER</b></p>
+      <h1>{{this.type}}</h1>
+      <p> Articles par <b>DONAËL WALTER</b></p>
     </section>
     <section class="content">
-      <div class="last">
-        <MainCard 
-        :postinfo="blogList[blogList.length -1]"
-        />
-      </div>
       <div class="list">
-        <p class="list-title">Recent articles</p>
-        <PostCard
-        v-for="(blog, index) in blogList"
+        <MainCard
+        v-for="(blog, index) in sortedArticle"
         :key="index"
         :attributes="blog.attributes"
         :postinfo="blog"
@@ -32,7 +26,8 @@ import MainCard from '~/components/MainCard'
 export default {
   head () {
     return {
-      title: 'THE BLOG by Donaël WALTER',
+      type : this.$route.query.route,
+      title: 'THE BLOG by Donaël WALTER'+ ''+ this.$route.query.type,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         { hid: 'description', name: 'description', content: this.summary },
@@ -40,8 +35,15 @@ export default {
       ]
     }
   },
+  data(){
+    return {
+      type : 'default'
+    }
+  },
+  created(){
+    this.type = this.$route.query.type
+  },
   components: {
-    PostCard,
     MainCard
   },
   async asyncData({ app }) {
@@ -62,7 +64,12 @@ export default {
     })
     console.log(blogList);
     return blogList
-  }
+  },
+  computed :{
+      sortedArticle(){
+            return this.blogList.filter(blog => blog.attributes.type == this.type);
+      }
+  },
 }
 </script>
 
@@ -87,8 +94,7 @@ export default {
   .content{
     margin-left: 9%;
     margin-right: 9%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10%;
   }
   .last{
     margin-right: 32px;
@@ -102,5 +108,8 @@ export default {
   }
   .list{
     margin-left:32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
   }
 </style>
