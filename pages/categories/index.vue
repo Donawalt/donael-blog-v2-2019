@@ -49,7 +49,7 @@ export default {
     const content = document.querySelector('.content');
 
     content.addEventListener("mousemove", (e) => {
-      base.style.transform = 'translateX('+ e.offsetX +"px"+')';
+      base.style.transform = 'translateX('+ -e.offsetX +"px"+')';
     });
   },
   computed: {
