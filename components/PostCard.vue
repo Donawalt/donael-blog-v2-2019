@@ -3,14 +3,13 @@
        <nuxt-link :to="`/blog/${$attrs.postinfo.link}`">
        <div class="featured-conteneur">
                  <img class="featured-image" :v-lazy="'https://blog.donaelwalter.com'+`${$attrs.postinfo.attributes.thumbnail}`" :src="'https://blog.donaelwalter.com'+`${$attrs.postinfo.attributes.thumbnail}`" loading="lazy"/>
-
        </div>
-        <div class="article-info">
+       </nuxt-link>
+       <div class="article-info">
           <p class="article-type"><nuxt-link :to="`/type?type=${$attrs.postinfo.attributes.type}`">{{$attrs.postinfo.attributes.type}}</nuxt-link></p>
-          <h5 class="article-title">{{$attrs.postinfo.attributes.title}}</h5>
+          <h5 class="article-title"><nuxt-link :to="`/blog/${$attrs.postinfo.link}`">{{$attrs.postinfo.attributes.title}}</nuxt-link></h5>
           <p class="article-author">by {{$attrs.postinfo.attributes.author}}</p>
         </div>
-       </nuxt-link>
     </article>
 </template>
 
@@ -61,7 +60,7 @@ export default {
     font-weight: bold;
     margin-bottom: 16px;
   }
-  .article-title{
+  .article-title>a{
     font-size: 20px;
     color: white;
     font-weight: bold;
