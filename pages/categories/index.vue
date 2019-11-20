@@ -1,9 +1,10 @@
 <template>
     <div class="content">
       <div class="nav-container">
-      <nav class="nav">
+        Section du site en construction sorry !
+      <!-- <nav class="nav">
         <nuxt-link :to="`/type?type=${blog.attributes.type}`" v-for="blog in filterType" :key="blog">{{blog.attributes.type}}</nuxt-link>
-      </nav>
+      </nav>-->
       </div>
     </div>
 </template>
@@ -45,12 +46,6 @@ export default {
        this.distinctValue = [...new Set(this.blogList)];
   },
   mounted : function(){
-    const base =  document.querySelector('.nav-container');
-    const content = document.querySelector('.content');
-
-    content.addEventListener("mousemove", (e) => {
-      base.style.transform = 'translateX('+ -e.offsetX +"px"+')';
-    });
   },
   computed: {
       filterType(){
