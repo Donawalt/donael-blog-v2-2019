@@ -10,11 +10,6 @@ export default {
       ]
     }
   },
-  data (){
-    return {
-      url : window.location.href
-      }
-  },
   async asyncData({ params }) {
     const post = await import(`~/content/blog/${params.slug}.md`)
     const attr = post.attributes
@@ -83,7 +78,7 @@ export default {
     </div>
     <div class="comments">
     <h4>Commentaires</h4>
-    <vue-disqus shortname="the-blog-donael-walter" :identifier="slug" :url="url"></vue-disqus>
+    <vue-disqus shortname="the-blog-donael-walter" :identifier="slug" :url="`https://blog.donaelwalter.com/blog/${slug}`"></vue-disqus>
     </div>                        
   </section>
 </template>
