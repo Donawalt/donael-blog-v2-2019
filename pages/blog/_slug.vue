@@ -78,7 +78,7 @@ export default {
     </div>
     <div class="comments">
     <h4>Commentaires</h4>
-    <vue-disqus shortname="the-blog-donael-walter" :identifier="slug" :url="window.locattion.href"></vue-disqus>
+    <vue-disqus shortname="the-blog-donael-walter" :identifier="slug" :url="window.location.href"></vue-disqus>
     </div>                        
   </section>
 </template>
