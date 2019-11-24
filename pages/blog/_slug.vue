@@ -69,6 +69,17 @@ export default {
       </div>
     </div>
     <div class="post-content" v-html="html"></div>
+    <div>
+      <ul class="suggestion-navigation">
+        <nuxt-link :to="`/`">Acceuil</nuxt-link>
+        <div class="separator"></div>
+        <nuxt-link :to="`/type?type=${type}`">En lire plus dans la catégorie : {{ type }}</nuxt-link>
+      </ul>
+    </div>
+    <div class="comments">
+    <h4>Commentaires</h4>
+    <vue-disqus shortname="the-blog-donael-walter" :identifier="slug" :url="`http://blog.donaelwalter.com/blog/${slug}`"></vue-disqus>
+    </div>                        
   </section>
 </template>
 
@@ -155,7 +166,38 @@ export default {
   margin-bottom: 16px;
   width: 100%;
 }
-
+.suggestion-navigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.suggestion-navigation a {
+  text-decoration: none;
+  -webkit-text-stroke: 0.5px white;
+  color: transparent;
+  font-size: 2em;
+}
+.suggestion-navigation a:hover {
+  color: white;
+}
+.separator{
+  margin: 10px;
+  height: 50px;
+  width: 2px;
+  background-color: white;
+}
+h4 {
+  font-size: 3em;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  border-top: 2px solid white;
+}
 </style>
 
 <style>
@@ -180,4 +222,5 @@ export default {
   font-weight: bold;
   text-decoration: none;
 }
+
 </style>

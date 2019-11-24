@@ -13,7 +13,8 @@
   "dependencies": {
     "front-matter-markdown": "^0.4.3",
     "frontmatter-markdown-loader": "^2.1.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-disqus": "^3.0.5"
   },
   "devDependencies": {}
 }
