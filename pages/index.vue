@@ -60,7 +60,6 @@ export default {
         blogList: res
       }
     })
-    console.log(blogList);
     return blogList
   }
 }

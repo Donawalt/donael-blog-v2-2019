@@ -1,10 +1,9 @@
 <template>
     <div class="content">
       <div class="nav-container">
-        Section du site en construction sorry !
-      <!-- <nav class="nav">
-        <nuxt-link :to="`/type?type=${blog.attributes.type}`" v-for="blog in filterType" :key="blog">{{blog.attributes.type}}</nuxt-link>
-      </nav>-->
+   <nav class="nav">
+        <nuxt-link :to="`/type?type=${type}`" v-for="type in filterType" :key="type">{{type}}</nuxt-link>
+      </nav>
       </div>
     </div>
 </template>
@@ -43,7 +42,12 @@ export default {
     return blogList
   },
   created(){
-       this.distinctValue = [...new Set(this.blogList)];
+      this.categoriesList = this.blogList.map((blog,index) => {
+        var categories = {};
+        categories = blog.attributes.type;
+        return categories;
+      })
+      this.distinctValue = [...new Set(this.categoriesList)];
   },
   mounted : function(){
   },
@@ -60,22 +64,28 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-      justify-content: start;
-  align-items: flex-start;
+    justify-content: start;
+    align-items: flex-start;
 }
 a{
   text-decoration: none;
-  color: white;
+  -webkit-text-stroke: 1px  white;
+  color: transparent;
   list-style: none;;
   transform-style: preserve-3d;
   font-family: condor-compressed,sans-serif;
   line-height: 1em;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 10vw;
+  font-size: 2vw;
   margin-left: 1%;
   margin-right: 1%;
+  transition: 500ms;
+  margin: 8px;
+}
+a:hover{
+  color: white;
+  transition: 500ms;
 }
 .nav-container{
   position: absolute;
@@ -108,6 +118,7 @@ nav{
     -ms-flex-align: center;
     align-items: center;
     perspective: 1000px;
+    flex-direction: column;
 }
 
 .error-message{
