@@ -72,3 +72,31 @@ export default {
     font-weight: bold;
   }
 </style>
+<style scoped>
+@media (max-width: 600px){
+  .article-card{
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .featured-conteneur{
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .featured-image{
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-50%,50%);
+  }
+  .article-card:hover .featured-image{
+    transform: translate(-50%,50%) scale(1.1);
+  }
+}
+</style>

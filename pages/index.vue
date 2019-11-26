@@ -106,3 +106,23 @@ export default {
     margin-left:32px;
   }
 </style>
+
+<style scoped>
+@media (max-width: 600px) {
+  .content{
+    display: block;
+  }
+  .header-title{
+    height: auto;
+  }
+  .last{
+    display: none;
+  }
+  .list{
+    margin: 0px;
+  }
+  .list-title {
+    display: none;
+  }
+}
+</style>
