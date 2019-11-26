@@ -30,6 +30,7 @@ import PostCard from '~/components/PostCard'
 import MainCard from '~/components/MainCard'
 
 export default {
+  scrollToTop: true,
   head () {
     return {
       title: 'THE BLOG by Donaël WALTER',
@@ -86,8 +87,10 @@ export default {
   .content{
     margin-left: 9%;
     margin-right: 9%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
   }
   .last{
     margin-right: 32px;

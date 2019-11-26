@@ -1,5 +1,6 @@
 <script>
 export default {
+scrollToTop: true,
   head () {
     return {
       title: 'THE BLOG : '+this.title,
@@ -89,6 +90,9 @@ export default {
   margin-left: 9%;
   margin-right: 9%;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .post-header{
   height: 448px;
@@ -151,12 +155,14 @@ export default {
 
 }
 .post-content{
-  margin-top: 64px;
+  padding-top: 64px;
+  margin: auto;
   margin-left: 9%;
   margin-right: 9%;
   color: white;
   overflow-y: hidden;
   margin-bottom: 64px;
+  max-width: 1200px;
 }
 .post-content>h1,h2,h3{
   margin-top: 16px;
@@ -198,6 +204,11 @@ h4 {
   padding-top: 30px;
   border-top: 2px solid white;
 }
+.comments{
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+}
 </style>
 
 <style>
@@ -205,6 +216,11 @@ h4 {
     height: auto;
     width: 50vw;
     margin: auto;
+  }
+  @media (max-width: 600px){
+    .post-content img {
+      width: 80vw;
+    }
   }
 .post-content>h2,h3{
   margin-top: 32px;
@@ -222,5 +238,48 @@ h4 {
   font-weight: bold;
   text-decoration: none;
 }
+</style>
 
+<style scoped>
+@media (max-width: 600px) {
+  .post{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0px;
+    overflow: hidden;
+  }
+  .post-header{
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+  }
+  .thumbnail-conteneur{
+    width: 100vw;
+    height: 30vw;
+    margin-bottom: auto;
+  }
+  .post-info-conteneur{
+    width: 100%!important;
+  }
+  .post-content{
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  .post-title{
+    font-size: 2em!important;
+  }
+  .comments{
+   padding: 3%;
+  }
+  .suggestion-navigation{
+    flex-direction: column;
+  }
+  .separator{
+    height: 2px;
+    width: 50px;
+  }
+  .suggestion-navigation>a{
+    text-align: center;
+  }
+}
 </style>
