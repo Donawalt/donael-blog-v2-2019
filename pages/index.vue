@@ -30,7 +30,6 @@ import PostCard from '~/components/PostCard'
 import MainCard from '~/components/MainCard'
 
 export default {
-  scrollToTop: true,
   head () {
     return {
       title: 'THE BLOG by Donaël WALTER',
@@ -123,6 +122,11 @@ export default {
   }
   .list-title {
     display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header-title h1{
+    font-size: 70px;
   }
 }
 </style>

@@ -66,6 +66,7 @@ export default {
     align-items: center;
     justify-content: start;
     align-items: flex-start;
+    max-width: 1200px;
 }
 a{
   text-decoration: none;
@@ -124,5 +125,13 @@ nav{
 .error-message{
     font-size: 20px;
     color: white;
+}
+</style>
+
+<style scoped>
+@media screen and (max-width: 600px) {
+  a {
+    font-size: 10vw;
+  }
 }
 </style>

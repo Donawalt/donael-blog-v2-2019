@@ -94,6 +94,7 @@ export default {
     margin-left: 9%;
     margin-right: 9%;
     margin-bottom: 10%;
+    max-width: 1200px;
   }
   .last{
     margin-right: 32px;
@@ -111,4 +112,36 @@ export default {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2%;
   }
+</style>
+
+<style scoped>
+@media screen and (min-width: 1440px) {
+  .content {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header-title h1{
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 600px){
+  .content {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .list{
+    margin-left: 0px;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+  .header-title h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 380px){
+  .header-title h1{
+    font-size: 40px;
+  }
+}
 </style>

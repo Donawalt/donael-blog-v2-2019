@@ -5,7 +5,7 @@
                 <h2>TB</h2>
             </nuxt-link>
         </section>
-        <section>
+        <section class="links">
             <nav>
                 <ul>
                     <nuxt-link to="/">
@@ -14,15 +14,19 @@
                     <nuxt-link to="/categories">
                         <li>catégories</li>
                     </nuxt-link>
-                    <a href="https://www.donaelwalter.com/">
+                    <a href="https://www.donaelwalter.com/" target="_blank">
                         <li>portfolio</li>
                     </a>
                 </ul>
             </nav>
         </section>
+        <section class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
     </div>
 </template>
-
 <style scoped>
 a{
     color:white;
@@ -54,5 +58,33 @@ nav>ul{
 }
 nav>ul>a{
     margin-left: 24px;
+}
+</style>
+
+<style scoped>
+@media screen and (max-width: 600px){
+    .links{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .burger span{
+        width: 25px;
+        height: 3px;
+        margin: 2px;
+        background-color: white;
+    }
+}
+@media screen and (min-width: 600px){
+    .links {
+        display: block;
+    }
+    .burger{
+        display: none;
+    }
 }
 </style>

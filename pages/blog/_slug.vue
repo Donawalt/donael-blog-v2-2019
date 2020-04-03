@@ -1,6 +1,5 @@
 <script>
 export default {
-scrollToTop: true,
   head () {
     return {
       title: 'THE BLOG : '+this.title,
@@ -280,6 +279,9 @@ h4 {
   }
   .suggestion-navigation>a{
     text-align: center;
+  }
+  h4{
+    font-size: 2.5em;
   }
 }
 </style>
