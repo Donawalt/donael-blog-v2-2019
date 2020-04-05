@@ -231,6 +231,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
+  line-height: 130%;
 }
 .post-content a{
   color: rgb(132, 193, 240);
