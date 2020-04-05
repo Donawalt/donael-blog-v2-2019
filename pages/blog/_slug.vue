@@ -223,6 +223,7 @@ h4 {
   }
 .post-content>h2,h3{
   margin-top: 32px;
+  font-size: 1.5em;
   margin-bottom: 16px;
 }
 .post-content>p{
