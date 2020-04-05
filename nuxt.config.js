@@ -17,17 +17,15 @@ export default {
     ]
   },
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
-  /*
   ** Global CSS
   */
   css: [
+    '~/assets/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
+  loading : false,
   plugins: [
     '~/plugins/disqus'
   ],

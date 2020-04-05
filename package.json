@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "front-matter-markdown": "^0.4.3",
-    "frontmatter-markdown-loader": "^2.1.0",
-    "nuxt": "^2.0.0",
+    "frontmatter-markdown-loader": "^2.3.0",
+    "nuxt": "^2.12.2",
     "nuxt-mq": "^2.0.1",
     "vue-disqus": "^3.0.5"
   },
